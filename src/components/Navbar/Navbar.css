@@ -1,3 +1,9 @@
+h1 {
+  font-size: 5em;
+}
+p {
+  font-size: 2rem;
+}
 .nav {
   display: flex;
   width: 100%;
@@ -5,7 +11,20 @@
   justify-content: space-between;
   align-items: center;
 }
+.category {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 .nav ul {
   display: flex;
   gap: 3rem;
+  list-style: none;
+}
+.nav ul li {
+  font-size: 2em;
+}
+.nav ul li a {
+  padding: 0 2rem;
+  border: 2px solid white;
 }
