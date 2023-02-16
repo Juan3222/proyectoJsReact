@@ -30,10 +30,10 @@ const ItemListContainer = () => {
         <h2>Cargando...</h2>
       ) : (
         <>
-          <div className="">
+          <div className="listContainer">
             {libros.map((libro) => (
-              <div key={libro.id} className="listContainer">
-                <div className="">Nombre: {libro.nombre}</div>
+              <div key={libro.id} className="">
+                <div className="">Nombre: {libro.titulo}</div>
                 <div className="">
                   <img className="" src={libro.portada} />
                   <br />
