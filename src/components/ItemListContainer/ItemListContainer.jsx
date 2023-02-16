@@ -32,7 +32,7 @@ const ItemListContainer = () => {
         <>
           <div className="">
             {libros.map((libro) => (
-              <div key={libro.id} className="">
+              <div key={libro.id} className="listContainer">
                 <div className="">Nombre: {libro.nombre}</div>
                 <div className="">
                   <img className="" src={libro.portada} />
