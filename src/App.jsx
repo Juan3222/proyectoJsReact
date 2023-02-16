@@ -2,15 +2,24 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Navbar />
-      <ItemListContainer greeting="Bienvenidos a mi librería" />
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/categoria/:idCategoria"
+            element={<ItemListContainer />}
+          />
+
+          <Route path="/detalle/:idProducto" />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

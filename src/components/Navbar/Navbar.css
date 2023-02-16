@@ -6,10 +6,11 @@ p {
 }
 .nav {
   display: flex;
-  width: 100%;
   gap: 10rem;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  background-color: #181818;
 }
 .category {
   display: flex;
